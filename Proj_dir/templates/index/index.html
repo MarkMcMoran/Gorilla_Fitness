@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% block title %} Home page{% endblock %}
+
+{% block content %}
+{{block.super}}
+
+<div class="container">
+    <div class="container">
+        <div class="col s12 m12 l9 center">
+
+            <div class="Main__text">
+                <p>
+                    <h2>Become strong, independent and confident.</h2>
+                    <h5>Already have an account with us? <a href="{% url 'login' %}">Login </a></h5>
+                    <p>Track your food intake, and post updates on your progress for your fitness journey today!</p>
+                    <a href="{% url 'register' %}" class='col s12 btn btn-large waves-effect blue'>Try today for
+                        free</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Recipe cards -->
+        <div class="row recipe__cards center">
+            <div class="flow-text">
+                <div>
+                    <h4>Recipes & Inspiration</h4>
+                    <h6> Expert curated recipes, and meal ideas.</h6>
+                    </br>
+                </div>
+            </div>
+
+
+            <!-- Card 1-->
+            <div class="col s6 m6 l6">
+                <div class="card large">
+                    <div class="card-image">
+                        <img class="responsive-img"
+                            src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/11/steak.jpg">
+                        <span class="card-title">BBC - Good Food </span>
+                    </div>
+                    <div class="card-content ">
+                        <p> Here are 40 straight forward, and easy recipes from the BBC - Good food team.
+                            They
+                            are
+                            quick,
+                            and use commonly used ingredients found in your pantry. </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.bbcgoodfood.com/recipes/collection/easy-healthy">Click
+                            here.</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2-->
+
+            <div class="col s6 m6 l6">
+                <div class="card large">
+                    <div class="card-image">
+                        <img class="responsive-img"
+                            src="https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/salmon-KhjeYR__landscape.jpg?resize=480:*" ">
+                    <span class=" card-title">Mens Health</span>
+                    </div>
+                    <div class="card-content">
+                        <p> High Protein meals for all of the family, these are high quality easy to make
+                            nutrient
+                            densemeals
+                            suited for gym goers, and people looking to improve their diet.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.menshealth.com/uk/nutrition/recipes/a753327/21-high-protein-family-meals/">Click
+                            here.</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+        </div>
+    </div>
+    <!-- End row for the Cards -->
+
+
+
+    <div class="container">
+
+        <div class="row center col s6 m6 l6">
+
+            <h4>Testimonies</h4>
+            <!-- Carousel -->
+
+            <div class="carousel carousel-slider center">
+                <div class="carousel-item red white-text" href="#one!">
+                    <h2>Christopher Brent</h2>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id
+                        consectetur.
+                        Aliquet enim tortor at auctor urna nunc id. Vitae nunc sed velit dignissim sodales ut.
+                        Aliquam
+                        faucibus purus in massa tempor nec feugiat nisl. Dui sapien eget mi proin. Id interdum velit
+                        laoreet
+                        id donec ultrices. Diam maecenas sed enim ut sem viverra aliquet eget sit. Enim blandit
+                        volutpat
+                        maecenas volutpat. Condimentum id venenatis a condimentum. Consectetur adipiscing elit
+                        pellentesque
+                        habitant morbi tristique senectus. Sed felis eget velit aliquet sagittis id consectetur
+                        purus
+                        ut.
+                        Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Arcu felis
+                        bibendum
+                        ut
+                        tristique et egestas quis. Fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                    <h2>Jose Brannigan</h2>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id
+                        consectetur.
+                        Aliquet enim tortor at auctor urna nunc id. Vitae nunc sed velit dignissim sodales ut.
+                        Aliquam
+                        faucibus purus in massa tempor nec feugiat nisl. Dui sapien eget mi proin. Id interdum velit
+                        laoreet
+                        id donec ultrices. Diam maecenas sed enim ut sem viverra aliquet eget sit. Enim blandit
+                        volutpat
+                        maecenas volutpat. Condimentum id venenatis a condimentum. Consectetur adipiscing elit
+                        pellentesque
+                        habitant morbi tristique senectus. Sed felis eget velit aliquet sagittis id consectetur
+                        purus
+                        ut.
+                        Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Arcu felis
+                        bibendum
+                        ut
+                        tristique et egestas quis. Fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                    <h2>William Doyle</h2>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id
+                        consectetur.
+                        Aliquet enim tortor at auctor urna nunc id. Vitae nunc sed velit dignissim sodales ut.
+                        Aliquam
+                        faucibus purus in massa tempor nec feugiat nisl. Dui sapien eget mi proin. Id interdum velit
+                        laoreet
+                        id donec ultrices. Diam maecenas sed enim ut sem viverra aliquet eget sit. Enim blandit
+                        volutpat
+                        maecenas volutpat. Condimentum id venenatis a condimentum. Consectetur adipiscing elit
+                        pellentesque
+                        habitant morbi tristique senectus. Sed felis eget velit aliquet sagittis id consectetur
+                        purus
+                        ut.
+                        Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Arcu felis
+                        bibendum
+                        ut
+                        tristique et egestas quis. Fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                    <h2>Sharon Trent</h2>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id
+                        consectetur.
+                        Aliquet enim tortor at auctor urna nunc id. Vitae nunc sed velit dignissim sodales ut.
+                        Aliquam
+                        faucibus purus in massa tempor nec feugiat nisl. Dui sapien eget mi proin. Id interdum velit
+                        laoreet
+                        id donec ultrices. Diam maecenas sed enim ut sem viverra aliquet eget sit. Enim blandit
+                        volutpat
+                        maecenas volutpat. Condimentum id venenatis a condimentum. Consectetur adipiscing elit
+                        pellentesque
+                        habitant morbi tristique senectus. Sed felis eget velit aliquet sagittis id consectetur
+                        purus
+                        ut.
+                        Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Arcu felis
+                        bibendum
+                        ut
+                        tristique et egestas quis. Fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+            </div>
+            <!-- Carousel end-->
+        </div>
+    </div>
+</div>
+
+
+
+
+{%endblock%}

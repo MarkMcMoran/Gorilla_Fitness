@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}{{ object.title }} {% endblock %}
+{% load static %}
+{%block content%}
+{{block.super}}
+
+<div class="container">
+	<div class="col s4  offset-s4 ">
+		<h4>{{object.title}}</h4>
+		<img src="{{object.post_img.url }}">
+		<ul>
+			<li><a href="{% url 'delete_post' pk=post.pk %}">Remove post</a></li>
+			<li><a href="{% url 'update_post' pk=post.pk %} "> Update post </a></li>
+			<li>{{object.author }} on {{object.date_posted }}</li>
+		</ul>
+		<p> {{object.content }}</p>
+
+	</div>
+</div>
+{% endblock %}

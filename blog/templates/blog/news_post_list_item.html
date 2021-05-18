@@ -1,0 +1,29 @@
+{% load static %}
+{% if User.user != Profile.user %}
+	<h>Test test test</h>
+	User: {{ User.user }}
+{% endif%}
+{% for obj in queryset %}
+<!-- Start of post loop logic -->
+
+<div class="col s12 m5">
+	<div class="card horizontal">
+		<div class="card-image">
+			<img src="{{obj.post_img.url }}">
+			<a href="{{ obj.get_absolute_url }}"> <span class="card-title">{{ obj.title }}</span></a>
+		</div>
+		<div class="card-stacked">
+			<div class="card-content">
+				{{ obj.content}}
+			</div>
+			<a class="card-content">
+				Posted by: {{ obj.author }} - {{obj.date_posted | timesince }} ago.
+				<p>Topics:{% for cat in obj.categories.all%}{{cat}},{% endfor %}</p>
+			</a>
+		</div>
+	</div>
+	<!-- End of post loop logic -->
+	{% endfor %}
+
+
+</div>

@@ -1,0 +1,15 @@
+
+.reg-form {
+  margin: 0 auto;
+}
+
+.row{
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

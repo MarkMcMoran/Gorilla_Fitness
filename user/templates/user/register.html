@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} Register{% endblock %}
+{% load static %}
+
+{% load materializecss %}
+{%block content%}
+{{block.super}}
+
+<div class="container">
+    <div class="col s4 m7 l4 xl5 offset-s5 offset-m7 offset-l4 offset-xl4">
+        <div class="center-align">
+            <h5 class="blue-text flow-text">Register Now</h5>
+        </div>
+        <form class="center-align" method="post" action="">
+            {% csrf_token %}
+
+                {{ form.errors }}
+                {{ form.first_name | materializecss }}
+                {{ form.last_name | materializecss }}
+                {{ form.username | materializecss }}
+                {{ form.email  | materializecss }}
+                {{ form.password1 | materializecss }}
+                {{ form.password2  | materializecss }}
+
+                <button type="submit" class="col s12 btn btn-large waves-effect blue">Sign up</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{%endblock %}

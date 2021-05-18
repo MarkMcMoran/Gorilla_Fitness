@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %} About page {% endblock %}
+{% load static %}
+{%block content%}
+<div class="container">
+    <div class="col s4 m7 l4 xl5 offset-s5 offset-m7 offset-l4 offset-xl4">
+        <h3> About page </h3>
+        <div class="row">
+
+            {% for key, value in about_txt.items %}
+            <ul>
+                <li>{{ key }}</li>
+                <li>{{ value }}</li>
+            </ul>
+            {% endfor %}
+
+            <div class="col s12 ">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text flow-text">
+                        <span class="card-title">Why should you join?</span>
+                        <p>Our tool is an efficient, and free method of losing weight, so why have you not
+                            already
+                            joined?</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Join us today!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 ">
+                <h5>With your membership you will benefit from the following: </h5>
+                {% for key, value in benefits.items %}
+                <ul>
+                    <li>{{ key }}</li>
+                    <li>{{ value }}</li>
+                </ul>
+                {% endfor %}
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+</div>
+{%endblock%}
