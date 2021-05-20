@@ -1,7 +1,19 @@
-##  Gorilla Fitness - Read me 
+##  Gorilla Fitness
 
 ### Quick summary of the project
 A web application inspired by [My Fitness Pal](https://www.myfitnesspal.com/).
+
+![Index page](index_page.png)
+
+Profile
+![Profile page](my profile.png)
+
+
+Modifying your profile
+
+![editing profile](editing_profile.png)
+
+
 
 
 ## To get up and running on local machine
