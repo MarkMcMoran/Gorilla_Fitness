@@ -5,8 +5,9 @@ A web application inspired by [My Fitness Pal](https://www.myfitnesspal.com/).
 
 ![Index page](index_page.png)
 
-Profile
-![Profile page](my profile.png)
+You have your own profile that you can create, and update:
+
+![Profile page](my_profile.png)
 
 
 Modifying your profile
